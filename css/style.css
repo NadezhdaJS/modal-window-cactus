@@ -397,3 +397,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.form-a {
+  width: 500px;
+  height: 500px;
+  color: rgb(237, 18, 18);
+}
