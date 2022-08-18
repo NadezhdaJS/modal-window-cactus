@@ -1,13 +1,37 @@
 @charset "UTF-8";
 html {
   box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  background-color: #decdac;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+body {
+  color: #46423a;
+  font-family: Gelasio;
+  font-style: normal;
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: TTTrailers;
+  font-family: Gelasio;
   font-display: swap;
-  src: url("../fonts/TTTrailers-Regular.woff2") format("woff2"), url("../fonts/TTTrailers-Regular.woff") format("woff");
+  src: url("../fonts/Gelasio-Regular.woff2") format("woff2"), url("../fonts/Gelasio-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gelasio;
+  font-display: swap;
+  src: url("../fonts/Gelasio-SemiBold.woff2") format("woff2"), url("../fonts/Gelasio-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -42,11 +66,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 /**
@@ -148,23 +167,13 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -173,7 +182,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -380,14 +390,6 @@ article > * + * {
   margin-top: 1em;
 }
 
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -397,9 +399,103 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.form-a {
-  width: 500px;
-  height: 500px;
-  background-color: rgb(243, 25, 25);
-  padding-top: 500px;
+.modal {
+  background-color: #fefaf3;
+  width: 83.5em;
+  height: 41em;
+  padding: 7em 5.1em;
+  margin: auto;
+  box-shadow: 0em 1em 0.4em rgba(0, 0, 0, 0.25);
+  border-radius: 6em;
+  position: relative;
+}
+
+.close-modal {
+  right: 41px;
+  top: 38px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.left {
+  width: 33.42px;
+  height: 3px;
+  background-color: #afa187;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  position: absolute;
+}
+
+.right {
+  width: 33.42px;
+  height: 3px;
+  background-color: #afa187;
+  transform: rotate(-45deg);
+  border-radius: 2px;
+  position: absolute;
+}
+
+.img {
+  position: absolute;
+  width: 27.05em;
+  height: 28.05em;
+  top: -5.1em;
+}
+
+.title {
+  padding-left: 37.2rem;
+  font-size: 4.8rem;
+  line-height: 6.1rem;
+  letter-spacing: -0.02em;
+}
+
+.text {
+  padding-left: 37.2rem;
+  padding-top: 3.7rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.form {
+  padding-top: 4.4rem;
+  width: 73.3rem;
+  height: 6.9rem;
+  position: relative;
+}
+.form input {
+  width: 73.3rem;
+  height: 6.9rem;
+  background: #eee9dd;
+  border: 0.1rem solid #afa187;
+  border-radius: 3rem;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding-left: 3.1rem;
+  font-weight: 600;
+  font-family: Gelasio;
+}
+.form ::placeholder {
+  color: #afa187;
+}
+
+.btn {
+  background: #ebbf53;
+  border-radius: 0px 30px 30px 0px;
+  color: #fefaf3;
+  height: 6.9rem;
+  border: none;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  width: 21rem;
+  position: absolute;
+  left: 52.3rem;
+  font-family: Gelasio;
+  font-style: normal;
+  font-weight: 600;
 }

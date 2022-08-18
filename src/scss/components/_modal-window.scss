@@ -1,0 +1,98 @@
+.modal {
+  background-color: $main-white;
+  width: 83.5em;
+  height: 41em;
+  padding: 7em 5.1em;
+  margin: auto;
+  box-shadow: 0em 1em 0.4em rgba(0, 0, 0, 0.25);
+  border-radius: 6em;
+  position: relative;
+}
+
+.close-modal {
+  right: 41px;
+  top: 38px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.left {
+  width: 33.42px;
+  height: 3px;
+  background-color: $main-grey;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  position: absolute;
+}
+.right {
+  width: 33.42px;
+  height: 3px;
+  background-color: $main-grey;
+  transform: rotate(-45deg);
+  border-radius: 2px;
+  position: absolute;
+}
+
+.img {
+  position: absolute;
+  width: 27.05em;
+  height: 28.05em;
+  top: -5.1em;
+}
+
+.title {
+  padding-left: 37.2rem;
+  font-size: 4.8rem;
+  line-height: 6.1rem;
+  letter-spacing: -0.02em;
+}
+.text {
+  padding-left: 37.2rem;
+  padding-top: 3.7rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.form {
+  padding-top: 4.4rem;
+  width: 73.3rem;
+  height: 6.9rem;
+  position: relative;
+
+  input {
+    width: 73.3rem;
+    height: 6.9rem;
+    background: #eee9dd;
+    border: 0.1rem solid $main-grey;
+    border-radius: 3rem;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-left: 3.1rem;
+    font-weight: 600;
+    font-family: Gelasio;
+  }
+  ::placeholder {
+    color: $main-grey;
+  }
+}
+
+.btn {
+  background: #ebbf53;
+  border-radius: 0px 30px 30px 0px;
+  color: $main-white;
+  height: 6.9rem;
+  border: none;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  width: 21rem;
+  position: absolute;
+  left: 52.3rem;
+  font-family: Gelasio;
+  font-style: normal;
+  font-weight: 600;
+}

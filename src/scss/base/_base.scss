@@ -1,5 +1,13 @@
-
 html {
   box-sizing: border-box;
+  font-size: 10px;
 }
 
+body {
+  background-color: #decdac;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
