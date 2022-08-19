@@ -11,6 +11,8 @@ body {
 .container {
   display: flex;
   height: 100vh;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 body {
@@ -399,40 +401,61 @@ article > * + * {
     scroll-behavior: auto !important;
   }
 }
+.click-on-me {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 2em auto;
+  color: #46423a;
+  height: fit-content;
+}
+
+.link {
+  color: #46423a;
+}
+
+a:hover {
+  color: #6f4d13;
+}
+
 .modal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   background-color: #fefaf3;
-  width: 83.5em;
-  height: 41em;
+  max-width: 83.5em;
+  max-height: 41em;
   padding: 7em 5.1em;
   margin: auto;
   box-shadow: 0em 1em 0.4em rgba(0, 0, 0, 0.25);
   border-radius: 6em;
   position: relative;
+  width: 100%;
 }
 
 .close-modal {
-  right: 41px;
-  top: 38px;
+  right: -36rem;
+  top: -2.8rem;
   display: flex;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 
 .left {
-  width: 33.42px;
-  height: 3px;
+  width: 3.34rem;
+  height: 0.3rem;
   background-color: #afa187;
   transform: rotate(45deg);
-  border-radius: 2px;
+  border-radius: 0.2rem;
   position: absolute;
 }
 
 .right {
-  width: 33.42px;
-  height: 3px;
+  width: 3.34rem;
+  height: 0.3rem;
   background-color: #afa187;
   transform: rotate(-45deg);
-  border-radius: 2px;
+  border-radius: 0.2rem;
   position: absolute;
 }
 
@@ -463,6 +486,10 @@ article > * + * {
   width: 73.3rem;
   height: 6.9rem;
   position: relative;
+}
+.form :active,
+.form :focus {
+  outline: none;
 }
 .form input {
   width: 73.3rem;
@@ -498,4 +525,19 @@ article > * + * {
   font-family: Gelasio;
   font-style: normal;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.hide {
+  display: none;
 }

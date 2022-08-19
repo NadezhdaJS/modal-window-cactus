@@ -10,4 +10,6 @@ body {
 .container {
   display: flex;
   height: 100vh;
+  margin: 0 auto;
+  flex-direction: column;
 }
