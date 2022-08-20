@@ -407,6 +407,7 @@ article > * + * {
   margin: 2em auto;
   color: #46423a;
   height: fit-content;
+  padding-bottom: 2em;
 }
 
 .link {
